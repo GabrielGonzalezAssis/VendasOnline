@@ -7,13 +7,15 @@ public class Carro {
     private String cor;
     private int ano;
     private int placa;
+    private String imagem;
 
-    public Carro(int chassi, String marca, String cor, int ano, int placa) {
+    public Carro(int chassi, String marca, String cor, int ano, int placa, String imagem) {
         this.chassi = chassi;
         this.marca = marca;
         this.cor = cor;
         this.ano = ano;
         this.placa = placa;
+        this.imagem = imagem;
     }
 
 
@@ -55,5 +57,13 @@ public class Carro {
 
     public void setPlaca(int placa) {
         this.placa = placa;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 }
