@@ -16,10 +16,8 @@ public class Carro {
     private String cor;
     private int ano;
     private int placa;
+    private String imagem;
 
-    public int getId() {
-        return id;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -63,5 +61,13 @@ public class Carro {
 
     public void setPlaca(int placa) {
         this.placa = placa;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 }
