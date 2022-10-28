@@ -14,6 +14,7 @@ public class Anuncio {
     private int id;
     private Carro carro;
     private Concessionaria concessionaria;
+
     
     public int getId() {
         return id;
