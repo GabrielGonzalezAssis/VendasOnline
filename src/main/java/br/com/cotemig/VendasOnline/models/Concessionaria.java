@@ -1,10 +1,7 @@
 package br.com.cotemig.VendasOnline.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Concessionaria {
@@ -14,9 +11,21 @@ public class Concessionaria {
     private int id;
     private String nome;
     private String cnpj;
+
+    @ManyToOne
+    @JoinColumn(name="carro_id", nullable=false)
     private Carro carro;
+
     private String endereco;
     private int conta;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;

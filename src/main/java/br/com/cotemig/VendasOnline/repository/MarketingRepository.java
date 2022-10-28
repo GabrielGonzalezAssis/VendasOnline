@@ -1,4 +1,4 @@
 package br.com.cotemig.VendasOnline.repository;
 
-public class Carro {
+public class MarketingRepository {
 }

@@ -1,7 +1,5 @@
 package br.com.cotemig.VendasOnline.models;
 
-import com.sun.javafx.beans.IDProperty;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +17,13 @@ public class Carro {
     private int ano;
     private int placa;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getChassi() {
         return chassi;

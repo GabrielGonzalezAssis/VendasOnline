@@ -1,10 +1,7 @@
 package br.com.cotemig.VendasOnline.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Anuncio {
@@ -12,10 +9,15 @@ public class Anuncio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @ManyToOne
+    @JoinColumn(name="carro_id", nullable=false)
     private Carro carro;
+
+    @ManyToOne
+    @JoinColumn(name="concessionaria_id",nullable=false)
     private Concessionaria concessionaria;
 
-    
     public int getId() {
         return id;
     }

@@ -1,10 +1,7 @@
 package br.com.cotemig.VendasOnline.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Marketing {
@@ -14,8 +11,18 @@ public class Marketing {
     private int id;
     private String plataforma;
     private String cnpj;
+
+    @ManyToOne
+    @JoinColumn(name="anuncio_id", nullable=false)
     private Anuncio anuncio;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getPlataforma() {
         return plataforma;

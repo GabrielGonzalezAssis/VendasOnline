@@ -1,4 +1,4 @@
 package br.com.cotemig.VendasOnline.repository;
 
-public class Cliente {
+public class ClienteRepository {
 }

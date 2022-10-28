@@ -1,4 +1,4 @@
 package br.com.cotemig.VendasOnline.repository;
 
-public class Transacao {
+public class TransacaoRepository {
 }
