@@ -1,18 +1,20 @@
 package br.com.cotemig.VendasOnline.models;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Anuncio {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private Carro carro;
     private Concessionaria concessionaria;
-
-    public Anuncio(int id, Carro carro, Concessionaria concessionaria) {
-        this.id = id;
-        this.carro = carro;
-        this.concessionaria = concessionaria;
-    }
-
+    
     public int getId() {
         return id;
     }

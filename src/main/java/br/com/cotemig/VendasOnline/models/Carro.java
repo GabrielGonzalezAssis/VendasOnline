@@ -1,20 +1,23 @@
 package br.com.cotemig.VendasOnline.models;
 
+import com.sun.javafx.beans.IDProperty;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Carro {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private int chassi;
     private String marca;
     private String cor;
     private int ano;
     private int placa;
-
-    public Carro(int chassi, String marca, String cor, int ano, int placa) {
-        this.chassi = chassi;
-        this.marca = marca;
-        this.cor = cor;
-        this.ano = ano;
-        this.placa = placa;
-    }
 
 
     public int getChassi() {

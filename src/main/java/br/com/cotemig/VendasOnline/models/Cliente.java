@@ -1,20 +1,21 @@
 package br.com.cotemig.VendasOnline.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Cliente {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nome;
     private String cpf;
     private String endereco;
     private int conta;
 
-    public Cliente(int id, String nome, String cpf, String endereco, int conta) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.endereco = endereco;
-        this.conta = conta;
-    }
 
     public int getId() {
         return id;
