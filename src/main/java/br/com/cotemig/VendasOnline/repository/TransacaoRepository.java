@@ -1,4 +1,12 @@
 package br.com.cotemig.VendasOnline.repository;
 
-public class TransacaoRepository {
+import br.com.cotemig.VendasOnline.models.Transacao;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository("transacaoRepository")
+
+public interface TransacaoRepository extends JpaRepository<Transacao, Integer> {
+
+
 }
