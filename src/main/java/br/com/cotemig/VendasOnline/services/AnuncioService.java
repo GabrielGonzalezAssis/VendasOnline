@@ -14,6 +14,8 @@ public interface AnuncioService {
     void uptadeAnuncio (Anuncio anuncio);
     void insertAnuncio (Anuncio anuncio);
 
+
+
 }
 
 
