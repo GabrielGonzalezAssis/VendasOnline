@@ -10,9 +10,9 @@ public interface CarroService {
     List<Carro> getAllCarro();
     void deleteAllCarro();
     void deleteCarroById(Integer id);
-    void uptadeCarroById(Integer id, Carro anuncio);
-    void uptadeCarro (Carro anuncio);
-    void insertCarro (Carro anuncio);
+    void uptadeCarroById(Integer id, Carro carro);
+    void uptadeCarro (Carro carro);
+    void insertCarro (Carro carro);
 
 
 }

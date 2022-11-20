@@ -6,11 +6,11 @@ import java.util.Optional;
 
 public interface ClienteService {
 
-    Optional<Cliente> getCarroById(Integer id);
-    List<Cliente> getAllCarro();
-    void deleteAllCarro();
-    void deleteCarroById(Integer id);
-    void uptadeCarroById(Integer id, Cliente anuncio);
-    void uptadeCarro (Cliente anuncio);
-    void insertCarro (Cliente anuncio);
+    Optional<Cliente> getClienteById(Integer id);
+    List<Cliente> getAllCliente();
+    void deleteAllCliente();
+    void deleteClienteById(Integer id);
+    void uptadeClienteById(Integer id, Cliente cliente);
+    void uptadeCliente (Cliente cliente);
+    void insertCliente (Cliente cliente);
 }

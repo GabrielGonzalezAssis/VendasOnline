@@ -8,12 +8,12 @@ import java.util.Optional;
 
 public interface ConcessionariaService {
 
-    Optional<Concessionaria> getCarroById(Integer id);
-    List<Concessionaria> getAllCarro();
-    void deleteAllCarro();
-    void deleteCarroById(Integer id);
-    void uptadeCarroById(Integer id, Concessionaria anuncio);
-    void uptadeCarro (Concessionaria anuncio);
-    void insertCarro (Concessionaria anuncio);
+    Optional<Concessionaria> getConcessionariaById(Integer id);
+    List<Concessionaria> getAllConcessionaria();
+    void deleteAllConcessionaria();
+    void deleteConcessionariaById(Integer id);
+    void uptadeConcessionariaById(Integer id, Concessionaria concessionaria);
+    void uptadeConcessionaria (Concessionaria concessionaria);
+    void insertConcessionaria (Concessionaria concessionaria);
 
 }

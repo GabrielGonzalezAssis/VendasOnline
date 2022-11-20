@@ -8,13 +8,13 @@ import java.util.Optional;
 
 public interface TransacaoService {
 
-    Optional<Transacao> getCarroById(Integer id);
-    List<Transacao> getAllCarro();
-    void deleteAllCarro();
-    void deleteCarroById(Integer id);
-    void uptadeCarroById(Integer id, Transacao anuncio);
-    void uptadeCarro (Transacao anuncio);
-    void insertCarro (Transacao anuncio);
+    Optional<Transacao> getTransacaoById(Integer id);
+    List<Transacao> getAllTransacao();
+    void deleteAllTransacao();
+    void deleteTransacaoById(Integer id);
+    void uptadeTransacaoById(Integer id, Transacao transacao);
+    void uptadeTransacao (Transacao transacao);
+    void insertTransacao (Transacao transacao);
     
 
 

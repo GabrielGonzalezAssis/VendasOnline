@@ -12,6 +12,7 @@ public class Marketing {
     private String plataforma;
     private String cnpj;
 
+
     @ManyToOne
     @JoinColumn(name="anuncio_id", nullable=false)
     private Anuncio anuncio;
