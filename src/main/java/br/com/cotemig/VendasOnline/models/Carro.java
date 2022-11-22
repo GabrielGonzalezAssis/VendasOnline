@@ -23,6 +23,10 @@ public class Carro {
         this.id = id;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public int getChassi() {
         return chassi;
     }
